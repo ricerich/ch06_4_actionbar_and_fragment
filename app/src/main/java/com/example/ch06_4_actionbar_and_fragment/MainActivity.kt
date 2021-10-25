@@ -111,6 +111,8 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener
             var data = Bundle()
             data.putString("tabName", tab.text.toString())
 
+            myTabFrament.arguments = data
+
             myFragArr[tab.position] = myTabFrament
 
         }
@@ -124,11 +126,11 @@ class MainActivity : AppCompatActivity(), ActionBar.TabListener
     }
 
     override fun onTabUnselected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
-        TODO("Not yet implemented")
+//        TODO("Not yet implemented")
     }
 
     override fun onTabReselected(tab: ActionBar.Tab?, ft: FragmentTransaction?) {
-        TODO("Not yet implemented")
+//        TODO("Not yet implemented")
     }
 
 
